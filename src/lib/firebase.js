@@ -1,12 +1,11 @@
 import Firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/auth'
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+
+console.log(process.env.REACT_APP_API_KEY)
 
 const config = {
-  apiKey: process.env.API_KEY,
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: 'instagram---ytt.firebaseapp.com',
   projectId: 'instagram---ytt',
   storageBucket: 'instagram---ytt.appspot.com',
